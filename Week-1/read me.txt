@@ -1,0 +1,43 @@
+Exercise 1.1
+
+1. 
+
+-> When a user enters an URL in the browser, the browser sends the url to DNS (Domain Name Server) to get the corresponding IP address of the url. The DNS returns IP address to the browser after which browser requests required resoruce(mostly a web page) to given IP address.
+
+The server then responds to browser by providing required documents(html/css/js) if available
+
+the parser create DOM reprentation by reading html file line by line and tree of a page is constructed.
+
+After which, the rendering engine interpret the document and transform it into visual representation on user's device
+
+While rendering the page, if any reference to other .css/.js or other file is found the networking part of browers requests that file for rendering
+
+when refrenced .js file is available, the script processors interpret the file when required
+
+The rendering engine paints whole page when available and will eventually add .css and .js file as and when available.
+
+
+
+a. The main functionality of a browser is to make resources on the web accessible to its users. Browsers are basically client machines through which users can interact with the web.
+
+b. Several high level components of a browser are: 
+	- UI
+	- Browser engine
+	- Rendering engine
+	- JS Interpreter
+	- Networking
+	- UI Backend
+	- Data Persistance
+
+	
+c. Rendering engine is used to interpret the html document and transform into an interactive visual representation on user's device
+
+d. Parsers in browser are used to read html/css/js documents line by line and create a DOM representation which is then used to render the page
+
+e. Script processors are basically interpretors of javascript which are used to interpret javascript code
+
+f. Tree construction is a process in which parsers create a DOM representation of document using parsers.
+
+g. The order of script processing is based on the occurrence of script in html document. This means, the script which is mentioned first, will be processed first and so on.
+
+h. The browser paints the page i.e. create visual representation by interpreting document(html/css) through rendering engine.
