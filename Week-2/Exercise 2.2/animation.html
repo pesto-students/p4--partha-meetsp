@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #app{
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            border-radius: 50px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            animation-duration: 0.2s,2s,1s;
+            animation-name: grow,slide;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        #app:hover{
+            width: 400px;
+        }
+
+        @keyframes pulse {
+            0%{
+                background-color: rgb(138, 71, 71);
+            }
+            100%{
+                background-color: rgb(168, 168, 84);
+            }
+        }
+
+        @keyframes slide {
+            to{
+                transform: translateX(500px);
+            }
+        }
+
+        @keyframes grow {
+            to{
+                transform: scale(2);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+     <div id="app"></div>
+
+     <script>
+
+    </script>
+</body>
+</html>
