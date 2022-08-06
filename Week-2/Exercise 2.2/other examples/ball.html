@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+
+        #block-1{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            transition-property: transform all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-out;
+            border-radius: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #block-1:hover{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="block-1"></div>
+
+    <script>
+        const el = document.getElementById("block-1");
+
+        window.addEventListener("mousemove",function(event){
+            const{clientX,clientY} = event;
+            el.style.transform = `translate(${clientX-50}px,${clientY-50}px)`;
+        });
+    </script>
+</body>
+</html>
